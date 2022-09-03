@@ -1,0 +1,119 @@
+*{
+    margin: none;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+    --background-color: #1B2430;
+    --background-color-hover: white;
+    --font-color: white;
+    --font-color-hover: #1B2430;
+    --padding: 2rem 2rem;
+    --margin: 2rem auto;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-family: timonium, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 30vh;
+    
+}
+
+nav{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+nav ul{
+    width: 50vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.de{
+    color: gray;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 1rem 2rem;
+}
+
+li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+    nav{
+        height: 25vh;
+        justify-content: space-around;
+        
+    }
+    nav ul{
+        width: 30vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+        
+        
+    }
+    header{
+        margin-bottom: 5rem;
+    }
+}
+
+/* LIST OF BRANDS */
+
+.brandName{
+    font-size: 2rem;
+    padding: var(--padding);
+    margin: var(--margin);
+    text-align: center;
+    display: block;
+    width: 50vw;
+    border: 2px dotted white;
+}
+
+.brandName:hover{
+    background-color: var(--background-color-hover);
+    color: var(--font-color-hover);
+}
+
+
+
